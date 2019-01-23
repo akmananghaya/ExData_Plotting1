@@ -18,7 +18,7 @@ lines(pcsub$day, pcsub$Sub_metering_2,col="red")
 lines(pcsub$day, pcsub$Sub_metering_3,col="blue")
 legend("topright",lty=1, lwd=1,col=c("black","blue","red"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 #fourth plot
-plot(pcsub$Global_reactive_power~pcsub$day, type="l",ylab="Voltage",xlab="datetime")
+plot(pcsub$Global_reactive_power~pcsub$day, type="l",ylab="Global_reactive_power",xlab="datetime")
 
 dev.copy(png, file="plot4.png", height=480, width=480)
 dev.off()
